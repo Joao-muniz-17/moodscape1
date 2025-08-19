@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodScape</title>
+    
+    <meta name="description" content="Um site interativo que muda de aparência com base no seu humor.">
+    <meta name="author" content="Seu Nome ou Gemini">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="animation-canvas"></canvas>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MoodScape</h1>
+            <p class="site-subtitle">Escolha seu humor e transforme o ambiente</p>
+        </header>
+
+        <nav class="mood-selector">
+            <button class="mood-btn" data-mood="feliz">😀 Feliz</button>
+            <button class="mood-btn" data-mood="calmo">🌿 Calmo</button>
+            <button class="mood-btn" data-mood="estressado">😡 Estressado</button>
+            <button class="mood-btn" data-mood="criativo">🎨 Criativo</button>
+            <button class="mood-btn" data-mood="energetico">⚡ Energético</button>
+        </nav>
+
+        <main class="content-area">
+            <blockquote class="quote-block">
+                <p id="quote-text">"A vida é sobre criar um impacto, não uma renda."</p>
+                <cite id="quote-author">Kevin Kruse</cite>
+            </blockquote>
+        </main>
+    </div>
+</body>
+</html>
